@@ -1,5 +1,15 @@
+import NavBar from 'components/NavBar';
+
 const SharedLayout = () => {
-  return <></>;
+  return (
+    <div>
+      <aside />
+      <main>
+        <section />
+      </main>
+      <NavBar />
+    </div>
+  );
 };
 
 export default SharedLayout;

@@ -27,17 +27,17 @@ export const theme = {
   ],
   colors: {
     accent: '#FFB400',
+    dark: '#2B2B2B',
+    light: '#FAFAFA',
     text: {
       primary: { dark: '#E4E6EB', light: '#767676' },
-      secondary: { dark: '#FFFFFF', light: '#2B2B2B' },
-      dark: '#2B2B2B',
-      light: '#FFFFFF',
+      secondary: { dark: '#FAFAFA', light: '#2B2B2B' },
     },
     background: {
       primary: { dark: '#242526', light: '#F0F0F6' },
-      secondary: { dark: '#2B2B2B', light: '#EBD8FF' },
-      dark: '#2B2B2B',
+      secondary: { dark: '#2B2B2B', light: '#FAFAFA' },
+      tertiary: { dark: '#0f0f0f', light: '#2e2e2e' },
     },
   },
-  transition: { main: 'cubic-bezier(0.4, 0, 0.2, 1)' },
+  transition: 'cubic-bezier(0.4, 0, 0.2, 1)',
 };
