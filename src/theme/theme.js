@@ -1,8 +1,16 @@
-const selectedTheme = 'dark' || 'light';
-
 export const theme = {
   breakpoints: { mobile: '480px', tablet: '768px', desktop: '1280px' },
-  fonts: {},
+  fonts: {
+    main: {
+      regular: 'Inter-Regular',
+      medium: 'Inter-Medium',
+      semiBold: 'Inter-SemiBold',
+      bold: 'Inter-Bold',
+    },
+    secondary: {
+      bold: 'Roboto-Bold',
+    },
+  },
   fontSizes: [
     '10px', // 0
     '12px', // 1
@@ -20,14 +28,14 @@ export const theme = {
   colors: {
     accent: '#FFB400',
     text: {
-      primary: selectedTheme === 'dark' ? '#E4E6EB' : '#767676',
-      secondary: selectedTheme === 'dark' ? '#FFFFFF' : '#2B2B2B',
+      primary: { dark: '#E4E6EB', light: '#767676' },
+      secondary: { dark: '#FFFFFF', light: '#2B2B2B' },
       dark: '#2B2B2B',
       light: '#FFFFFF',
     },
     background: {
-      primary: selectedTheme === 'dark' ? '#242526' : '#F0F0F6',
-      secondary: selectedTheme === 'dark' ? '#2B2B2B' : '#EBD8FF',
+      primary: { dark: '#242526', light: '#F0F0F6' },
+      secondary: { dark: '#2B2B2B', light: '#EBD8FF' },
       dark: '#2B2B2B',
     },
   },
