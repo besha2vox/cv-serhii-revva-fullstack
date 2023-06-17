@@ -26,7 +26,7 @@ const Profile = ({ handleClick, isClicked }) => {
 };
 
 Profile.propTypes = {
-  isClicked: PropTypes.string.isRequired,
+  isClicked: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
