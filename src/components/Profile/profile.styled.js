@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { after } from 'styles/after.styled';
 import { AboutMeWrapper } from 'components/AboutMe/aboutMe.styled';
 
 export const ProfileWrapper = styled.div`
@@ -10,8 +9,6 @@ export const ProfileWrapper = styled.div`
   align-items: center;
   gap: 8px;
   padding: 0 40px;
-
-  ${after};
 `;
 
 export const PhotoWrapper = styled.div`

@@ -9,7 +9,10 @@ export const ContactListWrapper = styled.ul`
   gap: 8px;
   padding: 0 40px;
 
-  ${after};
+  & li:last-child {
+    position: relative;
+    ${after};
+  }
 `;
 
 export const ContactLink = styled(Link)`

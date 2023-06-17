@@ -1,10 +1,15 @@
+import { useContext } from 'react';
+
+import { ThemeContext } from 'contexts/ThemeContext';
 import { contacts } from 'data/info';
 
 import { SocialListWrapper, SocialLink } from './socialList.styled';
 
 const SocialList = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <SocialListWrapper>
+    <SocialListWrapper current_theme={theme}>
       {contacts[1].map(({ info, Icon, link }) => (
         <li key={info}>
           <SocialLink target="_blank" to={link}>
