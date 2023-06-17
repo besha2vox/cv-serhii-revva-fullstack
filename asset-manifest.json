@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv-serhii-revva-fullstack/static/css/main.decdbe63.css",
-    "main.js": "/cv-serhii-revva-fullstack/static/js/main.018b850d.js",
+    "main.js": "/cv-serhii-revva-fullstack/static/js/main.ba635f97.js",
     "static/media/Inter-Bold.ttf": "/cv-serhii-revva-fullstack/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-SemiBold.ttf": "/cv-serhii-revva-fullstack/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
     "static/media/Inter-Medium.ttf": "/cv-serhii-revva-fullstack/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
@@ -22,10 +22,10 @@
     "static/media/location.svg": "/cv-serhii-revva-fullstack/static/media/location.635275072fe4ea2fca29cc7f689aaae7.svg",
     "static/media/home.svg": "/cv-serhii-revva-fullstack/static/media/home.5d7dd7ebe8af2e33284916e2fc49a059.svg",
     "main.decdbe63.css.map": "/cv-serhii-revva-fullstack/static/css/main.decdbe63.css.map",
-    "main.018b850d.js.map": "/cv-serhii-revva-fullstack/static/js/main.018b850d.js.map"
+    "main.ba635f97.js.map": "/cv-serhii-revva-fullstack/static/js/main.ba635f97.js.map"
   },
   "entrypoints": [
     "static/css/main.decdbe63.css",
-    "static/js/main.018b850d.js"
+    "static/js/main.ba635f97.js"
   ]
 }
