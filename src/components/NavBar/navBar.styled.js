@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const NavAside = styled.aside`
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
   gap: 30px;
-  margin-left: auto;
 
   min-width: 100px;
   max-width: fit-content;
@@ -22,6 +23,7 @@ export const NavAside = styled.aside`
   transition-timing-function: ${({ theme }) => theme.transition};
 
   @media screen and (max-width: 1279px) {
+    min-width: fit-content;
     transform: translateX(100%);
 
     &.active {
@@ -30,6 +32,7 @@ export const NavAside = styled.aside`
   }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    position: relative;
     gap: 174px;
   }
 `;
@@ -46,6 +49,10 @@ export const ToggleButton = styled.button`
   background-color: inherit;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+  transition-timing-function: ${({ theme }) => theme.transition};
 `;
 
 export const NavBarWrapper = styled.nav`

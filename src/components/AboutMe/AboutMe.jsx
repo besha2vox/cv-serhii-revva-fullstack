@@ -1,39 +1,35 @@
-import { aboutMe, contacts, skills } from 'data/info';
+import { useContext } from 'react';
+import PropTypes from 'prop-types';
 
-const AboutMe = () => {
+import { ThemeContext } from 'contexts/ThemeContext';
+
+import Profile from 'components/Profile';
+import ContactsList from 'components/ContactsList';
+import SkillSetList from 'components/SkillSetList/SkillSetList';
+
+import { AboutMeWrapper, HiddenAboutMeButton } from './aboutMe.styled';
+
+const AboutMe = ({ className, viewportWidth, handleClick }) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <aside style={{ padding: '50px 40px' }}>
-      <div>
-        <img
-          width="150"
-          style={{ borderRadius: '50%' }}
-          src={aboutMe.photo}
-          alt={aboutMe.name}
-        />
-        <p>{aboutMe.name}</p>
-        <p>{aboutMe.role}</p>
-        <ul style={{ display: 'flex' }}>
-          {contacts[1].map(({ info, Icon, link }) => (
-            <li key={info}>
-              <a href={link}>
-                <Icon />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <ul>
-        {contacts[0].map(({ info, Icon, link }) => (
-          <li key={info}>
-            <a href={link}>
-              <Icon />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </aside>
+    <AboutMeWrapper className={className} current_theme={theme}>
+      {viewportWidth < 1279 && (
+        <HiddenAboutMeButton onClick={handleClick} current_theme={theme}>
+          hide
+        </HiddenAboutMeButton>
+      )}
+      <Profile handleClick={handleClick} isClicked={className === 'hidden'} />
+      <ContactsList />
+      <SkillSetList />
+    </AboutMeWrapper>
   );
+};
+
+AboutMe.propTypes = {
+  className: PropTypes.string.isRequired,
+  viewportWidth: PropTypes.number.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default AboutMe;

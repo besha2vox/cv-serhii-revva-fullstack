@@ -8,6 +8,9 @@ const App = () => {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="/education" element={<HomePage />} />
+        <Route path="/work-experience" element={<HomePage />} />
+        <Route path="/portfolio" element={<HomePage />} />
       </Route>
     </Routes>
   );

@@ -1,4 +1,5 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
+import PropTypes from 'prop-types';
 
 import { ThemeContext } from 'contexts/ThemeContext';
 
@@ -26,34 +27,13 @@ const navBarIcons = [
   { name: 'Portfolio', Icon: PortfolioIcon, path: '/portfolio' },
 ];
 
-const NavBar = props => {
+const NavBar = ({ className, viewportWidth, handleClick }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  const [menuClass, setMenuClass] = useState('');
-
-  useEffect(() => {
-    const handleResize = () => {
-      setViewportWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setMenuClass(prevState => {
-      if (!prevState) return 'active';
-      return '';
-    });
-  };
 
   return (
-    <NavAside className={menuClass} current_theme={theme}>
+    <NavAside className={className} current_theme={theme}>
       {viewportWidth < 1279 && (
-        <ToggleButton current_theme={theme} onClick={toggleMenu}>
+        <ToggleButton current_theme={theme} onClick={handleClick}>
           Menu
         </ToggleButton>
       )}
@@ -74,6 +54,12 @@ const NavBar = props => {
       </Navigation>
     </NavAside>
   );
+};
+
+NavBar.propTypes = {
+  className: PropTypes.string.isRequired,
+  viewportWidth: PropTypes.number.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default NavBar;
