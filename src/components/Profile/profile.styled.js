@@ -22,15 +22,17 @@ export const PhotoWrapper = styled.div`
   transition-duration: 300ms;
   transition-timing-function: ${({ theme }) => theme.transition};
 
-  ${AboutMeWrapper}.hidden & {
-    transform: translate(100%, calc(-100% + 100px)) scale(0.2);
-    cursor: pointer;
-  }
+  @media screen and (max-width: 1279px) {
+    ${AboutMeWrapper}.hidden & {
+      transform: translate(100%, calc(-100% + 100px)) scale(0.2);
+      cursor: pointer;
+    }
 
-  ${AboutMeWrapper}.hidden &:hover {
-    box-shadow: 5px 5px 20px ${({ theme }) => theme.colors.accent},
-      -5px -5px 20px ${({ theme }) => theme.colors.accent},
-      -5px 5px 20px ${({ theme }) => theme.colors.accent},
-      5px -5px 20px ${({ theme }) => theme.colors.accent};
+    ${AboutMeWrapper}.hidden &:hover {
+      box-shadow: 5px 5px 20px ${({ theme }) => theme.colors.accent},
+        -5px -5px 20px ${({ theme }) => theme.colors.accent},
+        -5px 5px 20px ${({ theme }) => theme.colors.accent},
+        5px -5px 20px ${({ theme }) => theme.colors.accent};
+    }
   }
 `;
