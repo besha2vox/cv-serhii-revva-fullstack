@@ -7,7 +7,11 @@ import Profile from 'components/Profile';
 import ContactsList from 'components/ContactsList';
 import SkillSetList from 'components/SkillSetList/SkillSetList';
 
-import { AboutMeWrapper, HiddenAboutMeButton } from './aboutMe.styled';
+import {
+  AboutMeWrapper,
+  HiddenAboutMeButton,
+  ScrolledWrapper,
+} from './aboutMe.styled';
 
 const AboutMe = ({ className, viewportWidth, handleClick }) => {
   const { theme } = useContext(ThemeContext);
@@ -15,13 +19,13 @@ const AboutMe = ({ className, viewportWidth, handleClick }) => {
   return (
     <AboutMeWrapper className={className} current_theme={theme}>
       {viewportWidth < 1279 && (
-        <HiddenAboutMeButton onClick={handleClick} current_theme={theme}>
-          hide
-        </HiddenAboutMeButton>
+        <HiddenAboutMeButton onClick={handleClick} current_theme={theme} />
       )}
       <Profile handleClick={handleClick} isClicked={className === 'hidden'} />
-      <ContactsList />
-      <SkillSetList />
+      <ScrolledWrapper>
+        <ContactsList />
+        <SkillSetList />
+      </ScrolledWrapper>
     </AboutMeWrapper>
   );
 };

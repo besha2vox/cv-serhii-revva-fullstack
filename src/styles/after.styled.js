@@ -4,7 +4,7 @@ export const after = css`
   &::after {
     content: '';
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     left: 0;
 
     width: 100%;

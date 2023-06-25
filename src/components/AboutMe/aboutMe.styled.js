@@ -17,8 +17,8 @@ export const AboutMeWrapper = styled.aside`
   left: 0;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
-  gap: 50px;
+  padding: 32px 0;
+  gap: 40px;
 
   min-width: fit-content;
   min-height: 100vh;
@@ -52,7 +52,7 @@ export const HiddenAboutMeButton = styled.button`
   right: 10px;
   display: flex;
   gap: 4px;
-  padding: 4px 12px;
+  padding: 4px 8px;
 
   font-size: ${({ theme }) => theme.fontSizes[3]};
   line-height: 1;
@@ -86,4 +86,13 @@ export const HiddenAboutMeButton = styled.button`
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+`;
+
+export const ScrolledWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  overflow-y: auto;
 `;
