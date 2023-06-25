@@ -25,11 +25,17 @@ export const Main = styled.main`
 `;
 
 export const Section = styled.section`
-  padding: 35px 0;
+  padding: 44px 0;
   width: 100%;
 `;
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding: 0 30px;
   width: 100%;
+  max-height: 100vh;
+
+  overflow-y: auto;
 `;

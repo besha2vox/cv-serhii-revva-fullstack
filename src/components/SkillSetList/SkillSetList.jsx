@@ -1,4 +1,4 @@
-import { skills } from 'data/info';
+import { skills } from 'data/aboutMe';
 
 import SkillSetItem from 'components/SkillSetItem';
 

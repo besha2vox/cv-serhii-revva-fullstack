@@ -2,10 +2,10 @@ export const theme = {
   breakpoints: { mobile: '480px', tablet: '768px', desktop: '1280px' },
   fonts: {
     main: {
-      regular: 'Inter-Regular',
-      medium: 'Inter-Medium',
-      semiBold: 'Inter-SemiBold',
-      bold: 'Inter-Bold',
+      regular: 'Inter-Regular', // 400
+      medium: 'Inter-Medium', // 500
+      semiBold: 'Inter-SemiBold', // 600
+      bold: 'Inter-Bold', // 700
     },
     secondary: {
       bold: 'Roboto-Bold',

@@ -8,7 +8,12 @@ import { ThemeContext } from 'contexts/ThemeContext';
 import NavBar from 'components/NavBar';
 import AboutMe from 'components/AboutMe';
 
-import { SharedLayoutWrapper, Main, Container } from './sharedLayout.styled';
+import {
+  SharedLayoutWrapper,
+  Main,
+  Section,
+  Container,
+} from './sharedLayout.styled';
 
 const SharedLayout = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -66,14 +71,14 @@ const SharedLayout = () => {
         className={aboutMeClass}
         viewportWidth={viewportWidth}
       />
-      <Main curre>
-        <section>
+      <Main>
+        <Section>
           <Container>
             <Suspense fallback={null}>
               <Outlet />
             </Suspense>
           </Container>
-        </section>
+        </Section>
       </Main>
       <NavBar
         handleClick={toggleMenu}

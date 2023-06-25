@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { aboutMe } from 'data/info';
+import { aboutMe } from 'data/aboutMe';
 
 import SocialList from 'components/SocialList';
 import SubTitle from 'components/SubTitle';

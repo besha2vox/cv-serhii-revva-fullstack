@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import { ThemeContext } from 'contexts/ThemeContext';
-import { contacts } from 'data/info';
+import { contacts } from 'data/aboutMe';
 
 import { SocialListWrapper, SocialLink } from './socialList.styled';
 
