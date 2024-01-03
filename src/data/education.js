@@ -7,7 +7,6 @@ export const education = {
       studyField: 'PHP Base',
       startDate: new Date('01.18.2024'),
     },
-
     {
       logo: 'https://media.licdn.com/dms/image/C4D0BAQGer2PeE1Lp1Q/company-logo_100_100/0/1650366467060/ithillel_logo?e=1712188800&v=beta&t=9dvOeA2S9xHA7cBqBE48CI1TqNOdQCji5Iy78NO24v4',
       name: 'Hillel IT School',
@@ -16,7 +15,6 @@ export const education = {
       startDate: new Date('08.28.2023'),
       endDate: new Date('11.15.2023'),
     },
-
     {
       logo: 'https://media.licdn.com/dms/image/C4E0BAQG3W7YQhG1mjQ/company-logo_100_100/0/1668510902073/goit_start_your_career_in_it_logo?e=1712188800&v=beta&t=gx_Cs7U2d_Hbfzcifab5VtSFeiSbV56n_ets7mCWr5E',
       name: 'GoIT',
