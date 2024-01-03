@@ -60,6 +60,10 @@ code {
 *::after {
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  /* display: none; */
+  width: 0;
+}
 
 h1,
 h2,

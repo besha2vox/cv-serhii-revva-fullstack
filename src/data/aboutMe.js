@@ -6,13 +6,15 @@ import { ReactComponent as TelegramIcon } from 'assets/images/icons/telegram.svg
 import { ReactComponent as InstagramIcon } from 'assets/images/icons/instagram.svg';
 import { ReactComponent as LocationIcon } from 'assets/images/icons/location.svg';
 import myPhoto from 'assets/images/my-photo.webp';
+import cv from 'assets/files/cv.pdf';
 
 const aboutMe = {
-  name: 'Serhii Revva',
+  fullName: 'Serhii Revva',
   photo: myPhoto,
   role: 'Full-Stack Developer',
   summary:
-    "I'm an enthusiastic and detail-oriented Frontend developer seeking an entry-level position with Company to use my skills in coding, troubleshooting complex problems. I have good knowledge of HTML, CSS, JavaScript, React.js and Node.js. Also have experience in applying the Agile / Scrum methodology when working in a team. I love new challenges that make me want to learn more technology and improve my skills every day. My goal is to excel in challenging and innovative work and strive to reach my full potential. I am a fast learner, responsible, and ready for challenging tasks.",
+    'During my studies at the GoIT school, I participated in 3 team projects as a Team Lead.\nI also took part in the social project of the Kharkiv IT Cluster. Together, we created a site for supporting volunteers and volunteer organizations, where up-to-date information about their activities is collected.\nI am currently working on a social project from Junfolio. We are developing a product that will help newbies gain experience in IT. My role in the team is Full-Stack developer.\nI want to be in a good team to improve my skills and use them for interesting tasks. I am a fast learner, responsible, ready for hard tasks.',
+  cv,
 };
 
 const contacts = [

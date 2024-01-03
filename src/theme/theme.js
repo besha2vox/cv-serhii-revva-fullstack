@@ -32,6 +32,7 @@ export const theme = {
     text: {
       primary: { dark: '#E4E6EB', light: '#767676' },
       secondary: { dark: '#FAFAFA', light: '#2B2B2B' },
+      tertiary: { dark: '#e4e6eb99', light: '#2B2B2B60' },
     },
     background: {
       primary: { dark: '#242526', light: '#F0F0F6' },
