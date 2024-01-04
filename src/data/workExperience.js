@@ -36,7 +36,7 @@ export const workExperience = [
     company: 'DENSO Manufacturing Czech, s.r.o.',
     link: 'https://www.denso.com/',
     country: 'Czech Republic',
-    position: 'Full Stack Developer',
+    position: 'Assembly Line Worker',
     employmentType: 'Full-time',
     responsibilities: [
       'Assembly of car air conditioners.',
@@ -52,7 +52,7 @@ export const workExperience = [
     company: 'PrivatBank',
     link: 'https://privatbank.ua/',
     country: 'Ukraine',
-    position: 'Full Stack Developer',
+    position: 'Tech. Support',
     employmentType: 'Full-time',
     responsibilities: [
       "Resolution of the application at the time of the client's request, based on the classification.",
