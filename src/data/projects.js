@@ -72,10 +72,18 @@ const comercialProjects = [
   },
   {
     screenshot:
-      'https://lh3.googleusercontent.com/fife/AGXqzDmxpejMCjH4R1brT3XBlV09lGhq03gE4JPN-8OkUwIzjjvAXdHruy6u_3ODfzzLP4MbBREh0s1pIkOgl8dvie4AZ2Ixer_9VDakre_G1-bQS3kMnpDyLNvICMLsC9JU4GAiuCi1xIOzPYbRSMzln8RMTcxKQK7w8d_HijXX0J311uOK564u4iQYHoALDUvt_GR3T1dVhVBUe58nTb-v65V55u2Dj_LTZ_NtjNQx9jlvitryJ0PyMtwxaxDHv_WUJSg-jaJvz0Zn6thnz0zP_ook_ZI1KmuOgNqPrfYFP8cw0BLi_ihE_hyf_qx12A8VJyMtHW9T-Pa3_w49WdsKTRLKp6tixhZlWJp-LP4KsPltynUvBdmEar8vpl9okOHiw81k5cFxpzcknRc8stWmKJYejl97sWstDrVcn4VKNuAw5x29hdcXO6vRCylLUZu9pw5NbdyQeMgecrn2D08Oo1_AEIvkEjbo9gyR4J3Bl-OshbB5cP5lBG23w1IYoQrBWNZm9OYUKFWfq9b_HWI888NXu7ojC6bAOpqHOHkjWRoyO6MJiNBmHIaGcQJLSpwnArAl35lbjwX8dnIWddx7GergmndOITXzSgLYR6l81wWs8dLMibF1HUoTqb7MDqKNQPeOpGd6z09zPB86NRp1oZE_nO9C2lS8E53LPuK2eipGUJY3Tm2r4vJuRYR2VlxI2ghW4cL22EH1ZT_7O7G6CUES7QW97RATdeBQl8y6wTVQnImsIpHHfQHTCcDmHWEXaAqMcWF8mio5EwTKDUMckGhp6L7hRNQkzHMPJcMpcS5dKRyG3rliCDO27m8Dxwq3GfRSeHQK_33mPLwEkhEteJI0EGGIwPEsN7sEtnK5c7dgBGByPukTMK0OMXQ6Cyr4TX-eA4zES5_KS8-xdCh-ZsRllu-NImlD6MLDE0EVXmmrVvnC3HokbnOfZS70Jv2fwYjT3yddO9ZmYKeeFfr_BXqdxp-DnCVnGFcuMH6UWkPwyXyLFDAYxf2iQXtME8j2IWipzm5I7AZbYYSMmu7MhFvjX5R8AJZtCFaEH-gRWto6MTPXH-Et67RsUwB2tb9FtnlCvpW-LFXwKycXOMwwOngA7EZ0s4yBzgauUu_U184J_03I4d-Whpb9mptsPBAErb5lV2VK6S7Vyf9BeNg_gux2QNY5buKIUTWEH7PCQKrm_cB6ikPoV4-jQ-QtQErPe7y_QUN-tzjIwg9bDYi1KtBRNUN7svFkHkXsnal29odP29FE7Ncy6rdEeVwixntkU5E6ERzaiSxBSTXu-tpBZh0TboV-6sw5sir9hWDWT3WDnM1_1F0m8BS2Pf623NhFeZVmH-datTHtnMLiGFuPA2rEI_C7VH51Mx04cLeVNs1oRhEC1MoiX5_fhsBsNb9wDV-BO4J2TOcw8RGN5I671b682H_YQu_sy9GZViuM09jkEr5q7Y3EXU511BppqeYG-a6fUHvazYOAV053j1KJ-TcPcX92La3srDQDg9nlGBm0UJ9HeIR24jLuNgRjfI7I0wkwm2_EmPCq6o_-e_fZWFMiJChJflY=w1920-h959',
+      'https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYTwvoVRDn3MlIPMyF6pDp-_Hg7aPFMaG7hYWb5g94SnExoZH4tpBMAm3bh3GHAAljjunLrZPQwv2AYLDj_Vd0WxttzgFg=w1920-h959',
     name: 'Junfolio',
     livePage: 'https://junfolio.top/',
-    technologys: [],
+    technologys: [
+      'Next.js',
+      'NextAuth',
+      'Styled Component',
+      'MongoDB',
+      'Mongoose',
+      'Cloudinary',
+      'Nodemailer',
+    ],
     role: 'Fullstack Developer',
     description:
       'A website that combines a portfolio base for IT beginners and a web studio for developing free websites for charitable organizations and social projects. On the one hand, the team of developers gets the experience of team development of real projects and a realized site in their portfolio, on the other hand, charitable organizations and social projects get a high-quality and free site',

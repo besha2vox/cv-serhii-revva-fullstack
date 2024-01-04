@@ -85,6 +85,7 @@ const SharedLayout = () => {
         className={menuClass}
         viewportWidth={viewportWidth}
       />
+      <div id="modal-root"></div>
     </SharedLayoutWrapper>
   );
 };

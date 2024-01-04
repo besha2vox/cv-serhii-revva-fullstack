@@ -1,10 +1,16 @@
 import { useEffect, useContext } from 'react';
 import { createPortal } from 'react-dom';
 
+import { ThemeContext } from 'contexts/ThemeContext';
 import ModalContext from 'context/ModalContext';
+
+import { BackDrop, CloseButton, ModalWindow } from './modal.styled';
+import ProjectModalCard from './ProjectModalCard';
 
 const Modal = () => {
   const { setIsModalOpen, props } = useContext(ModalContext);
+  const { theme } = useContext(ThemeContext);
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -26,11 +32,12 @@ const Modal = () => {
   };
 
   return createPortal(
-    <div onClick={handlerClickOverlay}>
-      <div>
-        <div {...props} />
-      </div>
-    </div>,
+    <BackDrop onClick={handlerClickOverlay} current_theme={theme}>
+      <ModalWindow current_theme={theme}>
+        <CloseButton onClick={handleCloseModal} current_theme={theme} />
+        <ProjectModalCard {...props} />
+      </ModalWindow>
+    </BackDrop>,
     document.getElementById('modal-root')
   );
 };
