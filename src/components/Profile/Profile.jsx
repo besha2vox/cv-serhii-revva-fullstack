@@ -13,9 +13,9 @@ const Profile = ({ handleClick, isClicked }) => {
   return (
     <ProfileWrapper>
       <PhotoWrapper {...onCliclProps}>
-        <img width="200" src={aboutMe.photo} alt={aboutMe.name} />
+        <img width="200" src={aboutMe.photo} alt={aboutMe.fullName} />
       </PhotoWrapper>
-      <SubTitle title={aboutMe.name} />
+      <SubTitle title={aboutMe.fullName} />
       <p>{aboutMe.role}</p>
       <SocialList />
     </ProfileWrapper>

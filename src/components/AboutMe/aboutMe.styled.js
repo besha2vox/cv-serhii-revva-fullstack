@@ -13,6 +13,7 @@ const arrowAnimation = keyframes`
 
 export const AboutMeWrapper = styled.aside`
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   display: flex;

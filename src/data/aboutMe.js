@@ -118,15 +118,6 @@ const certifications = [
     credentialURL: 'https://u41816.esclick.me/Ift3EpBVrPWu',
   },
   {
-    logo: 'https://media.licdn.com/dms/image/C4E0BAQG3W7YQhG1mjQ/company-logo_100_100/0/1668510902073/goit_start_your_career_in_it_logo?e=1712188800&v=beta&t=gx_Cs7U2d_Hbfzcifab5VtSFeiSbV56n_ets7mCWr5E',
-    name: 'Fullstack developer',
-    organization: 'GoIT',
-    issueDate: new Date('05.24.2023'),
-    credentialId: '14521',
-    credentialURL:
-      'https://drive.google.com/file/d/1Vml-4ovkROXB16ovUDteLLnwHEXm4mH-/view?usp=sharing',
-  },
-  {
     logo: 'https://web.kpi.kharkov.ua/ist/wp-content/uploads/sites/235/2022/02/epam-university-program.png',
     name: 'IT Marathon',
     organization: 'EPAM University',
@@ -134,6 +125,15 @@ const certifications = [
     credentialId: '2022EPAMITM221862',
     credentialURL:
       'https://certificates.epam.com/certificates/54ca910e-de03-41b3-8106-9c27c0e29163',
+  },
+  {
+    logo: 'https://media.licdn.com/dms/image/C4E0BAQG3W7YQhG1mjQ/company-logo_100_100/0/1668510902073/goit_start_your_career_in_it_logo?e=1712188800&v=beta&t=gx_Cs7U2d_Hbfzcifab5VtSFeiSbV56n_ets7mCWr5E',
+    name: 'Fullstack developer',
+    organization: 'GoIT',
+    issueDate: new Date('05.24.2023'),
+    credentialId: '14521',
+    credentialURL:
+      'https://drive.google.com/file/d/1Vml-4ovkROXB16ovUDteLLnwHEXm4mH-/view?usp=sharing',
   },
 ];
 
