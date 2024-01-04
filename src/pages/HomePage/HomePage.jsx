@@ -3,6 +3,8 @@ import { useContext } from 'react';
 import { ThemeContext } from 'contexts/ThemeContext';
 import { aboutMe } from 'data/aboutMe';
 
+import SubTitle from 'components/SubTitle';
+import CertificationsList from 'components/CertificationsItem/CertificationsList';
 import { HomeTitle, Summary, DownloadButton } from './homePage.styled';
 
 const { fullName, role, summary, cv } = aboutMe;
@@ -23,6 +25,9 @@ const HomePage = () => {
       <DownloadButton href={cv} download="CV Revva Serhii Full-Stack dev">
         Download my CV
       </DownloadButton>
+
+      <SubTitle title="Certifications" />
+      <CertificationsList />
     </>
   );
 };

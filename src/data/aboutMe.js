@@ -100,4 +100,41 @@ const skills = [
   },
 ];
 
-export { aboutMe, contacts, skills };
+const certifications = [
+  {
+    logo: 'https://media.licdn.com/dms/image/C4D0BAQGer2PeE1Lp1Q/company-logo_100_100/0/1650366467060/ithillel_logo?e=1712188800&v=beta&t=9dvOeA2S9xHA7cBqBE48CI1TqNOdQCji5Iy78NO24v4',
+    name: 'JavaScript/TypeScript',
+    organization: 'Hillel IT School',
+    issueDate: new Date('11.15.2023'),
+    credentialId: '37143491',
+    credentialURL: 'https://certificate.ithillel.ua/view/37143491',
+  },
+  {
+    logo: 'https://media.licdn.com/dms/image/C4E0BAQEtA8LJ897i3w/company-logo_100_100/0/1630645109341/kharkiv_it_cluster_logo?e=1712188800&v=beta&t=3CcafrpWZs-G033Z0C_UeX1RMeNiRd2bgzVWjNOGqJU',
+    name: 'BootCamp 2023',
+    organization: 'Kharkiv IT Cluster',
+    issueDate: new Date('06.01.2023'),
+    credentialId: 'ITK-23/95',
+    credentialURL: 'https://u41816.esclick.me/Ift3EpBVrPWu',
+  },
+  {
+    logo: 'https://media.licdn.com/dms/image/C4E0BAQG3W7YQhG1mjQ/company-logo_100_100/0/1668510902073/goit_start_your_career_in_it_logo?e=1712188800&v=beta&t=gx_Cs7U2d_Hbfzcifab5VtSFeiSbV56n_ets7mCWr5E',
+    name: 'Fullstack developer',
+    organization: 'GoIT',
+    issueDate: new Date('05.24.2023'),
+    credentialId: '14521',
+    credentialURL:
+      'https://drive.google.com/file/d/1Vml-4ovkROXB16ovUDteLLnwHEXm4mH-/view?usp=sharing',
+  },
+  {
+    logo: 'https://web.kpi.kharkov.ua/ist/wp-content/uploads/sites/235/2022/02/epam-university-program.png',
+    name: 'IT Marathon',
+    organization: 'EPAM University',
+    issueDate: new Date('06.01.2023'),
+    credentialId: '2022EPAMITM221862',
+    credentialURL:
+      'https://certificates.epam.com/certificates/54ca910e-de03-41b3-8106-9c27c0e29163',
+  },
+];
+
+export { aboutMe, contacts, skills, certifications };
