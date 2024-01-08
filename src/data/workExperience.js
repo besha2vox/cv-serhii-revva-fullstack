@@ -40,7 +40,7 @@ export const workExperience = [
     employmentType: 'Full-time',
     responsibilities: [
       'Assembly of car air conditioners.',
-      'Product quality contro',
+      'Product quality control.',
       'Loading and receiving parts from production machine',
       'Work on the Kanban methodology.',
     ],
